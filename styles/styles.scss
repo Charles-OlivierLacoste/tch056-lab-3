@@ -1,93 +1,73 @@
 body {
-    display: flex; 
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100wh;
-
     background: rgb(254, 255, 223);
-    background: linear-gradient(90deg, rgb(221, 224, 171), rgb(151,203,169), rgb(102, 139, 164))
-}
-
-.contenant { 
+    background: linear-gradient(90deg, rgb(221, 224, 171), rgb(151, 203, 169), rgb(102, 139, 164));
+  }
+  
+  .contenant {
     display: grid;
-    grid-template-areas: "a a a a a a a a a a a a"
-                         "b b b c c c d d d e e e"
-                         "f f f g g g h h h i i i"
-                         "j j j k k k l l l m m m"
-                         "n n n o o o p p p q q q"
-                         "r r r r s s s s t t t t"
-                         "u u u u u u u u u u u u";
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(5, 14%) 23% 7%;
-    height: 75%;
-    width: 75%;
-}
-
-#img1{
-    grid-area: b;
-}
-
-#img2{
-    grid-area: c;
-}
-
-#img3{
-    grid-area: d;
-}
-
-#img4{
-    grid-area: e;
-}
-
-#img5{
-    grid-area: f;
-}
-
-#img6{
-    grid-area: g;
-}
-
-#img7{
-    grid-area: h;
-}
-
-#img8{
-    grid-area: i;
-}
-
-#img9{
-    grid-area: j;
-}
-
-#img10{
-    grid-area: k;
-}
-
-#img11{
-    grid-area: l;
-}
-
-#img12{
-    grid-area: m;
-}
-
-#img13{
-    grid-area: n;
-}
-
-#img14{
-    grid-area: o;
-}
-
-#img15{
-    grid-area: op;
-}
-
-#img16{
-    grid-area: m;
-}
-
-img[alt="Photo de la mosaique"]{
-
-}
+    grid-template-areas: "a"
+                         "b"
+                         "c"
+                         "d";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    margin: 5%;
+  }
+  
+  #logo{
+      grid-area: a;
+      display: flex;
+  }
+  
+  #imgLogo{
+      justify-content: flex-start;
+  }
+  
+  #mosaique{
+      grid-area: b;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+  }
+  
+  #ligne1, #ligne2, #ligne3, #ligne4{
+      grid-area: b;
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 50vw;
+      height: 20vh;
+      justify-content: center;
+  }
+  
+  img[alt="Photo de la mosaique"]:hover{
+      transform: rotate(360deg);
+      transition: 0.5s;
+  }
+  
+  img[alt="Photo de la mosaique"]{
+      border: 2px dotted hotpink;
+      border-radius: 10%;
+  }
+  
+  #box{
+      grid-area: c;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+  
+  #github{
+      grid-area: d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }  
