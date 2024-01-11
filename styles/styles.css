@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100wh;
+  background: rgb(254, 255, 223);
+  background: linear-gradient(90deg, rgb(221, 224, 171), rgb(151, 203, 169), rgb(102, 139, 164));
+}
+
+.contenant {
+  display: grid;
+  grid-template-areas: "a"
+                       "b"
+                       "c"
+                       "d";
+  grid-template-columns: 100%;
+  grid-template-rows: 14% 56% 23% 7%;
+  height: 75%;
+  width: 75%;
+}
+
+.item{
+    display: flex;
+}
+
+#ligne1, #ligne2, #ligne3, #ligne4{
+    grid-area: b;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    height: 20%;
+}
+
+img[alt="Photo de la mosaique"]{
+    justify-content: center;
+    gap: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
