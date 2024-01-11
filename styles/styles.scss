@@ -1,0 +1,25 @@
+body {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100wh;
+
+    background: rgb(254, 255, 223);
+    background: linear-gradient(90deg, rgb(221, 224, 171), rgb(151,203,169), rgb(102, 139, 164))
+}
+
+.contenant { 
+    display: grid;
+    grid-template-areas: "a a a a a a a a a a a a"
+                         "b b b c c c d d d e e e"
+                         "f f f g g g h h h i i i"
+                         "j j j k k k l l l m m m"
+                         "n n n o o o p p p q q q"
+                         "r r r r s s s s t t t t"
+                         "u u u u u u u u u u u u";
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 14%) 23% 7%;
+    height: 75%;
+    width: 75%;
+}
