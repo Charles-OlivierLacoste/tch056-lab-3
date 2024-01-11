@@ -14,14 +14,14 @@ body {
                        "b"
                        "c"
                        "d";
-  grid-template-columns: 100%;
+  grid-template-columns: 100vw;
   grid-template-rows: 14% 56% 23% 7%;
   height: 75%;
   width: 75%;
 }
 
 .item{
-    display: flex;
+
 }
 
 #ligne1, #ligne2, #ligne3, #ligne4{
@@ -30,13 +30,13 @@ body {
     gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 50%;
-    height: 20%;
+    width: 50vw;
+    height: 20vh;
 }
 
-img[alt="Photo de la mosaique"]{
-    justify-content: center;
-    gap: 10px;
+img[alt="Photo de la mosaique"]:hover{
+    transform: rotate(360deg);
+    transition: 0.5s;
 }
 
 /*# sourceMappingURL=styles.css.map */
